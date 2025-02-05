@@ -15,17 +15,21 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding:
+                const EdgeInsets.only(left: 15, right: 15, top: 0, bottom: 0),
             child: Form(
               child: Column(
                 children: [
                   TextFormField(
+                    keyboardType: TextInputType.text,
                     decoration: InputDecoration(labelText: 'Name'),
                   ),
                   TextFormField(
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(labelText: 'Age'),
                   ),
                   TextFormField(
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(labelText: 'Salary'),
                   ),
                 ],
